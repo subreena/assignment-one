@@ -41,6 +41,7 @@ section{
     height: 700px;
     margin-bottom: 100px;
 }
+
 /* HEADER_SECTION */
 #header-section{
     background-image: url("images/header-bg.png");
@@ -91,15 +92,24 @@ section{
 /* WORK_SECTION */
 
 #work-section{
+    
     background-image: url("images\latest-work-bg.png");
     background-repeat: no-repeat;
     text-align: center;
     height: 500px;
-  padding: 20px 40px;
+  padding: 20px 80px;
+}
+#work-section::after{
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
 }
 .work-images {
-  width: 29%;
-  margin: 2%;
+    box-sizing: border-box;
+  width: 31%;
+  padding: 2%;
+  margin: 1%;
   float: left;
   
 }
@@ -110,10 +120,47 @@ section{
   
 }
 
+/* FOOTER_SECTION */
+
+footer{
+    margin-top: 40px;
+    background-image: url("images/footer-bg.png");
+    background-repeat: no-repeat;
+    text-align: center;
+}
+footer img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+footer span{
+    font-weight: 700;
+    color: dimgray;
+    font-size: 18px;
+
+
+}
+.message-box{
+    padding: 30px 45px;
+    color: white;
+    width: 50%;
+    margin: 50px auto;
+    background: linear-gradient(90deg, hotpink , #ff3082);
+    font-weight: 700;
+    border-radius: 5px;
+    
+    
+}
+.message-box p{
+    font-size: 20px;
+    color: white;
+}
+
 /* BONUS_SECTION */
 #bonus-section{
     text-align: center;
-    height: 900px;
+   height: 720px;
+   margin-top: 100px;
    
 }
 #bonus-box{
@@ -126,7 +173,7 @@ section{
     border-image-slice: 1;
     box-sizing: border-box;
     width: 90%;
-    height: 80%;
+    height: 95%;
     margin: auto;
    
     
@@ -183,44 +230,9 @@ input:focus{
     text-decoration: underline;
     font-weight: 700;
 }
-/* FOOTER_SECTION */
-
-footer{
-    margin-top: 40px;
-    background-image: url("images/footer-bg.png");
-    background-repeat: no-repeat;
-    text-align: center;
-}
-footer img{
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-}
-footer span{
-    font-weight: 700;
-    color: dimgray;
-    font-size: 18px;
-
-
-}
-.message-box{
-    padding: 30px 45px;
-    color: white;
-    width: 50%;
-    margin: 50px auto;
-    background: linear-gradient(90deg, hotpink , #ff3082);
-    font-weight: 700;
-    border-radius: 5px;
-    
-    
-}
-.message-box p{
-    font-size: 20px;
-    color: white;
-}
-
+/* COPYRIGHT */
 .copyright-section{
-   
+   text-align: center;
     margin-bottom: 20px;
     color: dimgray;
     font-weight: 400;
