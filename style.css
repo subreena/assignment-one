@@ -123,6 +123,7 @@ section{
 /* FOOTER_SECTION */
 
 footer{
+    clear: both;
     margin-top: 40px;
     background-image: url("images/footer-bg.png");
     background-repeat: no-repeat;
